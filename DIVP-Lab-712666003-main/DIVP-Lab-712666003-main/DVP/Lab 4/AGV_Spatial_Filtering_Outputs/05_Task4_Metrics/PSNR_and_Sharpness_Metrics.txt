@@ -1,0 +1,18 @@
+AGV SPATIAL FILTERING - TASK 4 METRICS
+===========================================================================
+
+Sharpness metric: Mean Gradient Magnitude
+Definition: mean(sqrt(Gx^2 + Gy^2)), using central differences.
+
+Task 1     | sigma=10, average=3x3                    | PSNR = 34.9166 dB | Sharpness = 2.5703
+Task 1     | sigma=10, average=5x5                    | PSNR = 35.8883 dB | Sharpness = 1.3642
+Task 1     | sigma=10, average=9x9                    | PSNR = 35.1476 dB | Sharpness = 0.7238
+Task 1     | sigma=25, average=3x3                    | PSNR = 29.3379 dB | Sharpness = 4.9497
+Task 1     | sigma=25, average=5x5                    | PSNR = 31.1746 dB | Sharpness = 2.4218
+Task 1     | sigma=25, average=9x9                    | PSNR = 31.6746 dB | Sharpness = 1.1223
+Task 2     | 4-neighbor Laplacian                     | PSNR = 34.5204 dB | Sharpness = 1.965
+Task 2     | 8-neighbor Laplacian                     | PSNR = 29.5167 dB | Sharpness = 3.9727
+Task 3     | High-Boost k=1.0                         | PSNR = 23.9499 dB | Sharpness = 14.5097
+Task 3     | High-Boost k=1.5                         | PSNR = 22.2517 dB | Sharpness = 17.2043
+Task 3     | High-Boost k=2.0                         | PSNR = 20.8304 dB | Sharpness = 19.8379
+Task 3     | High-Boost k=3.0                         | PSNR = 18.5486 dB | Sharpness = 24.9738

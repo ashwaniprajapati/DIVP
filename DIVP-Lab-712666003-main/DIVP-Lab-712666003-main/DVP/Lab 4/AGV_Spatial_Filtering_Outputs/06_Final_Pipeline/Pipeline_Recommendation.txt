@@ -1,0 +1,15 @@
+AGV SPATIAL-FILTERING PIPELINE RECOMMENDATION
+======================================================================
+
+The recommendation below is generated from the Task 4 PSNR measurements.
+
+Selected denoising configuration: sigma=10, 5x5 averaging filter
+Denoising PSNR: 35.8883 dB
+Selected Laplacian: 4-neighbor
+Selected Laplacian PSNR: 34.5204 dB
+
+Two-stage pipeline:
+1. Denoise using 5x5 averaging filter.
+2. Sharpen using the 4-neighbor Laplacian.
+
+Important: The lab statement explicitly notes that there is no single correct kernel size or boost factor. The final deployment choice should therefore be defended using the measured metrics and the image's navigation requirements.
